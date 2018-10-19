@@ -10,8 +10,7 @@ Esse trabalho visa explorar esse conceito, por meio da implementação de um ser
 
 Na figura abaixo é apresentado um exemplo de troca de mensagens entre os processos *workers* P<sub>1</sub> , P<sub>2</sub> , P<sub>3</sub> e o processo *Log*. Quando um processo worker processa um evento (i.e. evento interno, enviar ou receber mensagem), esse processo deve enviar uma mensagem para o processo *Log*. O processo *Log*consegue fazer uma ordenação FIFO das mensagens que são entregues a ele oriundas de um mesmo processo. Contudo, essa ordenação não seria suficiente em cenários em que a mensagem enviada por um processo P<sub>i</sub> para *Log* é consequência de uma mensagem que P<sub>i</sub> recebeu de P<sub>j</sub>. Por exemplo, no caso 1 da Figura 1, o processo P<sub>2</sub> envia uma mensagem para P<sub>3</sub> e na sequência envia uma mensagem para Log. P<sub>3</sub>, ao receber a mensagem de P<sub>2</sub>, também envia uma mensagem para o processo *Log*. Nesse exemplo, a ordem das mensagens entregues ao processo *Log* segue a mesma ordem de criação dessas mensagens. Contudo, no cenário 2 da Figura 1, a mensagem enviada por P<sub>2</sub> para o processo *Log* chega antes da mensagem enviada por P<sub>1</sub> para o processo *Log*, não respeitando assim a ordem dos eventos que geraram tais mensagens.
 
-![dlog](https://github.com/utfprpb-sd29cp-20182/trabalho2/blob/master/trabalho2/dlog-messages.png)
-
+![dlog](https://github.com/utfprpb-sd29cp-20182/trabalho2/blob/master/dlog-messages.png)
 
 Este trabalho terá duas entregas (versões 1.0 e 2.0).  
 
