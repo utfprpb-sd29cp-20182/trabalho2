@@ -104,6 +104,8 @@ Para validar a Versão 2.0, execute o mesmo cenário da versão 1.0.  Verifique 
 
 
 # Avaliação e Datas de Entrega
+* O trabalho pode ser desenvolvido em Java ou em C;
+* A comunicação entre processos pode ser usando sockets (UDP ou TCP) ou via middleware (RMI ou RPC);
 * Entregar via Github Classroom, conforme cronograma de entregas abaixo:
   - 22 e 25/10/2018 - Commit ao final da aula com o que foi desenvolvido, deve haver evolução entre um commit e outro.
   - até 08/11/2018 às 13h50min - Commit da versão 1.0/2.0 (final) e apresentação em sala. 
